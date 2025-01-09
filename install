@@ -10,3 +10,7 @@ if ! python3 -c "import requests" &> /dev/null; then
   # Install 'requests' library
   pip install -q requests
 fi
+
+python IP-FLUX.py
+
+fi
