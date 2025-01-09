@@ -1,0 +1,12 @@
+
+# Check if Tor is installed
+if ! command -v tor &> /dev/null; then
+  # Install Tor silently
+  pkg update -q && pkg install -y -q tor
+fi
+
+# Check if Python 'requests' library is installed
+if ! python3 -c "import requests" &> /dev/null; then
+  # Install 'requests' library
+  pip install -q requests
+fi
